@@ -84,7 +84,7 @@ namespace Connect_4
                     {
                         string player = (winner == 1) ? "Red" : "Yellow";
                         MessageBox.Show("Congratulations!  " + player + " Player has won!");
-                        Application.Restart();
+                        restartGame();
                     }
 
                     if (this.turn == 1)
@@ -173,6 +173,22 @@ namespace Connect_4
                     return i;
             }
             return -1;
+        }
+
+        private void restartGame()
+        {
+
+            Application.Restart();
+        }
+
+        private void restartRound()
+        {
+
+        }
+
+        private void roundWin()
+        {
+
         }
     }    
 }
