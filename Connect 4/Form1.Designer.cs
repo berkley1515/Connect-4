@@ -30,9 +30,13 @@
         {
             this.lastTurn = new System.Windows.Forms.Label();
             this.info1 = new System.Windows.Forms.Label();
-            this.buttonsLabel = new System.Windows.Forms.Label();
+            this.buttonsBackground = new System.Windows.Forms.Label();
             this.restartRoundButton = new System.Windows.Forms.Button();
             this.restartGameButton = new System.Windows.Forms.Button();
+            this.turnBackground = new System.Windows.Forms.Label();
+            this.turnLabel = new System.Windows.Forms.Label();
+            this.scoreBackground = new System.Windows.Forms.Label();
+            this.timerBackground = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lastTurn
@@ -53,13 +57,13 @@
             this.info1.Size = new System.Drawing.Size(194, 600);
             this.info1.TabIndex = 1;
             // 
-            // buttonsLabel
+            // buttonsBackground
             // 
-            this.buttonsLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.buttonsLabel.Location = new System.Drawing.Point(792, 522);
-            this.buttonsLabel.Name = "buttonsLabel";
-            this.buttonsLabel.Size = new System.Drawing.Size(167, 85);
-            this.buttonsLabel.TabIndex = 2;
+            this.buttonsBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonsBackground.Location = new System.Drawing.Point(792, 522);
+            this.buttonsBackground.Name = "buttonsBackground";
+            this.buttonsBackground.Size = new System.Drawing.Size(167, 85);
+            this.buttonsBackground.TabIndex = 2;
             // 
             // restartRoundButton
             // 
@@ -89,14 +93,53 @@
             this.restartGameButton.Text = "Restart Game";
             this.restartGameButton.UseVisualStyleBackColor = false;
             // 
+            // turnBackground
+            // 
+            this.turnBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.turnBackground.Location = new System.Drawing.Point(792, 385);
+            this.turnBackground.Name = "turnBackground";
+            this.turnBackground.Size = new System.Drawing.Size(167, 117);
+            this.turnBackground.TabIndex = 3;
+            // 
+            // turnLabel
+            // 
+            this.turnLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.turnLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.turnLabel.Location = new System.Drawing.Point(821, 394);
+            this.turnLabel.Name = "turnLabel";
+            this.turnLabel.Size = new System.Drawing.Size(100, 23);
+            this.turnLabel.TabIndex = 4;
+            this.turnLabel.Text = "Reds Turn";
+            this.turnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // scoreBackground
+            // 
+            this.scoreBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.scoreBackground.Location = new System.Drawing.Point(792, 216);
+            this.scoreBackground.Name = "scoreBackground";
+            this.scoreBackground.Size = new System.Drawing.Size(167, 148);
+            this.scoreBackground.TabIndex = 5;
+            // 
+            // timerBackground
+            // 
+            this.timerBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.timerBackground.Location = new System.Drawing.Point(792, 41);
+            this.timerBackground.Name = "timerBackground";
+            this.timerBackground.Size = new System.Drawing.Size(167, 153);
+            this.timerBackground.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.timerBackground);
+            this.Controls.Add(this.scoreBackground);
+            this.Controls.Add(this.turnLabel);
+            this.Controls.Add(this.turnBackground);
             this.Controls.Add(this.restartGameButton);
             this.Controls.Add(this.restartRoundButton);
-            this.Controls.Add(this.buttonsLabel);
+            this.Controls.Add(this.buttonsBackground);
             this.Controls.Add(this.info1);
             this.Controls.Add(this.lastTurn);
             this.Name = "Form1";
@@ -112,9 +155,13 @@
 
         private System.Windows.Forms.Label lastTurn;
         private System.Windows.Forms.Label info1;
-        private System.Windows.Forms.Label buttonsLabel;
+        private System.Windows.Forms.Label buttonsBackground;
         private System.Windows.Forms.Button restartRoundButton;
         private System.Windows.Forms.Button restartGameButton;
+        private System.Windows.Forms.Label turnBackground;
+        private System.Windows.Forms.Label turnLabel;
+        private System.Windows.Forms.Label scoreBackground;
+        private System.Windows.Forms.Label timerBackground;
     }
 }
 
