@@ -37,6 +37,10 @@
             this.turnLabel = new System.Windows.Forms.Label();
             this.scoreBackground = new System.Windows.Forms.Label();
             this.timerBackground = new System.Windows.Forms.Label();
+            this.roundTimeLabel = new System.Windows.Forms.Label();
+            this.gameTimeLabel = new System.Windows.Forms.Label();
+            this.redScoreLabel = new System.Windows.Forms.Label();
+            this.yellowScoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lastTurn
@@ -115,24 +119,78 @@
             // scoreBackground
             // 
             this.scoreBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.scoreBackground.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreBackground.Location = new System.Drawing.Point(792, 216);
             this.scoreBackground.Name = "scoreBackground";
             this.scoreBackground.Size = new System.Drawing.Size(167, 148);
             this.scoreBackground.TabIndex = 5;
+            this.scoreBackground.Text = "Score";
+            this.scoreBackground.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timerBackground
             // 
             this.timerBackground.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.timerBackground.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timerBackground.Location = new System.Drawing.Point(792, 41);
             this.timerBackground.Name = "timerBackground";
             this.timerBackground.Size = new System.Drawing.Size(167, 153);
             this.timerBackground.TabIndex = 6;
+            this.timerBackground.Text = "Timers";
+            this.timerBackground.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // roundTimeLabel
+            // 
+            this.roundTimeLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.roundTimeLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundTimeLabel.Location = new System.Drawing.Point(792, 81);
+            this.roundTimeLabel.Name = "roundTimeLabel";
+            this.roundTimeLabel.Size = new System.Drawing.Size(97, 23);
+            this.roundTimeLabel.TabIndex = 7;
+            this.roundTimeLabel.Text = "Round Time:";
+            this.roundTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // gameTimeLabel
+            // 
+            this.gameTimeLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.gameTimeLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
+            this.gameTimeLabel.Location = new System.Drawing.Point(792, 127);
+            this.gameTimeLabel.Name = "gameTimeLabel";
+            this.gameTimeLabel.Size = new System.Drawing.Size(97, 23);
+            this.gameTimeLabel.TabIndex = 8;
+            this.gameTimeLabel.Text = "Game Time:";
+            this.gameTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // redScoreLabel
+            // 
+            this.redScoreLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.redScoreLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
+            this.redScoreLabel.Location = new System.Drawing.Point(816, 253);
+            this.redScoreLabel.Name = "redScoreLabel";
+            this.redScoreLabel.Size = new System.Drawing.Size(88, 23);
+            this.redScoreLabel.TabIndex = 9;
+            this.redScoreLabel.Text = "Red Score:";
+            this.redScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // yellowScoreLabel
+            // 
+            this.yellowScoreLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.yellowScoreLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
+            this.yellowScoreLabel.Location = new System.Drawing.Point(792, 297);
+            this.yellowScoreLabel.Name = "yellowScoreLabel";
+            this.yellowScoreLabel.Size = new System.Drawing.Size(112, 23);
+            this.yellowScoreLabel.TabIndex = 10;
+            this.yellowScoreLabel.Text = "Yellow Score:";
+            this.yellowScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.yellowScoreLabel);
+            this.Controls.Add(this.redScoreLabel);
+            this.Controls.Add(this.gameTimeLabel);
+            this.Controls.Add(this.roundTimeLabel);
             this.Controls.Add(this.timerBackground);
             this.Controls.Add(this.scoreBackground);
             this.Controls.Add(this.turnLabel);
@@ -162,6 +220,10 @@
         private System.Windows.Forms.Label turnLabel;
         private System.Windows.Forms.Label scoreBackground;
         private System.Windows.Forms.Label timerBackground;
+        private System.Windows.Forms.Label roundTimeLabel;
+        private System.Windows.Forms.Label gameTimeLabel;
+        private System.Windows.Forms.Label redScoreLabel;
+        private System.Windows.Forms.Label yellowScoreLabel;
     }
 }
 
