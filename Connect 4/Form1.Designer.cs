@@ -144,7 +144,7 @@
             this.roundTimeLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundTimeLabel.Location = new System.Drawing.Point(792, 81);
             this.roundTimeLabel.Name = "roundTimeLabel";
-            this.roundTimeLabel.Size = new System.Drawing.Size(97, 23);
+            this.roundTimeLabel.Size = new System.Drawing.Size(167, 23);
             this.roundTimeLabel.TabIndex = 7;
             this.roundTimeLabel.Text = "Round Time:";
             this.roundTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,10 +152,10 @@
             // gameTimeLabel
             // 
             this.gameTimeLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.gameTimeLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
+            this.gameTimeLabel.Font = new System.Drawing.Font("Consolas", 11.25F);
             this.gameTimeLabel.Location = new System.Drawing.Point(792, 127);
             this.gameTimeLabel.Name = "gameTimeLabel";
-            this.gameTimeLabel.Size = new System.Drawing.Size(97, 23);
+            this.gameTimeLabel.Size = new System.Drawing.Size(167, 23);
             this.gameTimeLabel.TabIndex = 8;
             this.gameTimeLabel.Text = "Game Time:";
             this.gameTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,9 +166,9 @@
             this.redScoreLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
             this.redScoreLabel.Location = new System.Drawing.Point(816, 253);
             this.redScoreLabel.Name = "redScoreLabel";
-            this.redScoreLabel.Size = new System.Drawing.Size(88, 23);
+            this.redScoreLabel.Size = new System.Drawing.Size(143, 23);
             this.redScoreLabel.TabIndex = 9;
-            this.redScoreLabel.Text = "Red Score:";
+            this.redScoreLabel.Text = "Red Score: 0";
             this.redScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // yellowScoreLabel
@@ -177,9 +177,9 @@
             this.yellowScoreLabel.Font = new System.Drawing.Font("Consolas", 10.25F);
             this.yellowScoreLabel.Location = new System.Drawing.Point(792, 297);
             this.yellowScoreLabel.Name = "yellowScoreLabel";
-            this.yellowScoreLabel.Size = new System.Drawing.Size(112, 23);
+            this.yellowScoreLabel.Size = new System.Drawing.Size(167, 23);
             this.yellowScoreLabel.TabIndex = 10;
-            this.yellowScoreLabel.Text = "Yellow Score:";
+            this.yellowScoreLabel.Text = "Yellow Score: 0";
             this.yellowScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1

@@ -17,10 +17,12 @@ namespace Connect_4
         private Rectangle[] boardColumns;
         private int[,] board;
         private int turn;
+        int redScore = 0;
+        int yellowScore = 0;
+        
 
         System.Windows.Media.MediaPlayer eightBitPlayer;
-
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -36,7 +38,25 @@ namespace Connect_4
 
             eightBitPlayer.Stop();
             eightBitPlayer.Play();
+            
         }
+
+        //private void gameTimerMethod(object sender, EventArgs e, int gameTime, int gSeconds, int gMinutes)
+        //{
+        //    gameTime++;
+        //    gSeconds = gameTime;
+
+        //    if (gSeconds >= 60)
+        //    {
+        //        gSeconds = 0;
+        //        gMinutes++;
+        //    }
+            
+
+        //    gameTimeLabel.Text = ("Game Time: " + gMinutes.ToString("00") + ":" + gSeconds.ToString("00"));
+        //}
+
+
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
@@ -84,7 +104,20 @@ namespace Connect_4
                     {
                         string player = (winner == 1) ? "Red" : "Yellow";
                         MessageBox.Show("Congratulations!  " + player + " Player has won!");
-                        restartGame();
+                        roundWin();
+
+                        if (winner == 1)
+                        {
+                            redScore++;
+                            redScoreLabel.Text = ("Red Score: " + redScore);
+                            roundWin();
+                        }
+                        else
+                        {
+                            yellowScore++;
+                            yellowScoreLabel.Text = ("Yellow Score: " + yellowScore);
+                            roundWin();
+                        }
                     }
 
                     if (this.turn == 1)
@@ -183,14 +216,12 @@ namespace Connect_4
 
         private void restartRound()
         {
-
+            
         }
 
-        private void roundWin()
+        private void roundWin() 
         {
-
+            
         }
-
-       
     }    
 }
