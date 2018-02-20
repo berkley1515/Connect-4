@@ -60,7 +60,7 @@ namespace Connect_4
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.FillRectangle(Brushes.Blue, 24, 24, 700, 600);
+            e.Graphics.FillRectangle(Brushes.DeepSkyBlue, 24, 24, 700, 600);
 
             for (int i = 0; i < 6; i++)
             {
@@ -92,11 +92,17 @@ namespace Connect_4
                     {
                         Graphics g = this.CreateGraphics();
                         g.FillEllipse(Brushes.Red, 48 + 96 * columnIndex, 64 + 96 * rowIndex, 64, 64);
+
+                        turnLabel.Text = ("Yellows Turn");
+                        turnColourLabel.Image = Properties.Resources.yellowdot;
                     }
                     else if (this.turn == 2)
                     {
                         Graphics g = this.CreateGraphics();
                         g.FillEllipse(Brushes.Yellow, 48 + 96 * columnIndex, 64 + 96 * rowIndex, 64, 64);
+
+                        turnLabel.Text = ("Reds Turn");
+                        turnColourLabel.Image = Properties.Resources.reddot;
                     }
 
                     int winner = this.WinnerPlayer(this.turn);
@@ -208,13 +214,8 @@ namespace Connect_4
             return -1;
         }
 
-        private void restartGame()
-        {
 
-            Application.Restart();
-        }
-
-        private void restartRound()
+        private void RestartRound(PaintEventArgs e, int i, int j)
         {
             
         }
@@ -222,6 +223,11 @@ namespace Connect_4
         private void roundWin() 
         {
             
+        }
+
+        private void restartGame(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }    
 }

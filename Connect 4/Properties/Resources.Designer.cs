@@ -68,5 +68,25 @@ namespace Connect_4.Properties {
                 return ResourceManager.GetStream("_08_Ascending", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reddot {
+            get {
+                object obj = ResourceManager.GetObject("reddot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yellowdot {
+            get {
+                object obj = ResourceManager.GetObject("yellowdot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

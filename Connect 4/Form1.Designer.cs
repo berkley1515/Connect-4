@@ -41,6 +41,7 @@
             this.gameTimeLabel = new System.Windows.Forms.Label();
             this.redScoreLabel = new System.Windows.Forms.Label();
             this.yellowScoreLabel = new System.Windows.Forms.Label();
+            this.turnColourLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lastTurn
@@ -96,6 +97,7 @@
             this.restartGameButton.TabIndex = 2;
             this.restartGameButton.Text = "Restart Game";
             this.restartGameButton.UseVisualStyleBackColor = false;
+            this.restartGameButton.Click += new System.EventHandler(this.restartGame);
             // 
             // turnBackground
             // 
@@ -109,9 +111,9 @@
             // 
             this.turnLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.turnLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.turnLabel.Location = new System.Drawing.Point(821, 394);
+            this.turnLabel.Location = new System.Drawing.Point(808, 394);
             this.turnLabel.Name = "turnLabel";
-            this.turnLabel.Size = new System.Drawing.Size(100, 23);
+            this.turnLabel.Size = new System.Drawing.Size(135, 23);
             this.turnLabel.TabIndex = 4;
             this.turnLabel.Text = "Reds Turn";
             this.turnLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -182,11 +184,23 @@
             this.yellowScoreLabel.Text = "Yellow Score: 0";
             this.yellowScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // turnColourLabel
+            // 
+            this.turnColourLabel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.turnColourLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.turnColourLabel.Image = global::Connect_4.Properties.Resources.reddot;
+            this.turnColourLabel.Location = new System.Drawing.Point(833, 417);
+            this.turnColourLabel.Name = "turnColourLabel";
+            this.turnColourLabel.Size = new System.Drawing.Size(80, 80);
+            this.turnColourLabel.TabIndex = 11;
+            this.turnColourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.turnColourLabel);
             this.Controls.Add(this.yellowScoreLabel);
             this.Controls.Add(this.redScoreLabel);
             this.Controls.Add(this.gameTimeLabel);
@@ -224,6 +238,7 @@
         private System.Windows.Forms.Label gameTimeLabel;
         private System.Windows.Forms.Label redScoreLabel;
         private System.Windows.Forms.Label yellowScoreLabel;
+        private System.Windows.Forms.Label turnColourLabel;
     }
 }
 
